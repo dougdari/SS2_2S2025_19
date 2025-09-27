@@ -42,7 +42,7 @@ ORDER BY t.pickup_datetime
 LIMIT 10000;
 ```
 
-![tabla](assets/imagen1.png)
+![tabla](assets/Imagen1.png)
 
 ### Creación de la tabla con partición y clusterización
 
@@ -59,11 +59,11 @@ SELECT * FROM engaged-yen-472401-q2.datasetFase1.taxi_trips_temp;
 
 Ejecución de la query para la creación:
 
-![tabla](assets/imagen2.png)
+![tabla](assets/Imagen2.png)
 
 Tabla creada:
 
-![tabla](assets/imagen3.png)
+![tabla](assets/Imagen3.png)
 
 
 ### Métricas descriptivas

@@ -63,7 +63,7 @@ Ejecución de la query para la creación:
 
 Tabla creada:
 
-![cubo](assets/imagen3.png)
+![tabla](assets/imagen3.png)
 
 
 ### Métricas descriptivas

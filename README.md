@@ -42,7 +42,7 @@ ORDER BY t.pickup_datetime
 LIMIT 10000;
 ```
 
-![tabla](imagen1.png)
+![tabla](assets/imagen1.png)
 
 ### Creación de la tabla con partición y clusterización
 
@@ -59,11 +59,11 @@ SELECT * FROM engaged-yen-472401-q2.datasetFase1.taxi_trips_temp;
 
 Ejecución de la query para la creación:
 
-![tabla](imagen2.png)
+![tabla](assets/imagen2.png)
 
 Tabla creada:
 
-![cubo](imagen3.png)
+![cubo](assets/imagen3.png)
 
 
 ### Métricas descriptivas
@@ -308,22 +308,22 @@ ORDER BY hora;
 
 Rendimiento:
 
-![query](imagen4.png)
+![query](assets/imagen4.png)
 
 Resultado:
 
-![query](imagen5.png)
+![query](assets/imagen5.png)
 
 
 ### Distancia promedio de viajes mayores a 1 km (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen6.png)
+![query](assets/imagen6.png)
 
 Resultado:
 
-![query](imagen7.png)
+![query](assets/imagen7.png)
 
 
 Comparación:
@@ -341,22 +341,22 @@ Comparación:
 
 Rendimiento:
 
-![query](imagen8.png)
+![query](assets/imagen8.png)
 
 Resultado:
 
-![query](imagen9.png)
+![query](assets/imagen9.png)
 
 ### Duración promedio de los viajes en minutos (solo enero 2022) (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 
 Rendimiento:
 
-![query](imagen10.png)
+![query](assets/imagen10.png)
 
 Resultado:
 
-![query](imagen11.png)
+![query](assets/imagen11.png)
 
 Comparación:
 
@@ -374,21 +374,21 @@ Comparación:
 
 Rendimiento:
 
-![query](imagen12.png)
+![query](assets/imagen12.png)
 
 Resultado:
 
-![query](imagen13.png)
+![query](assets/imagen13.png)
 
 ### Promedio de tarifa y propina para viajes con más de un pasajero (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen14.png)
+![query](assets/imagen14.png)
 
 Resultado:
 
-![query](imagen15.png)
+![query](assets/imagen15.png)
 
 Comparación:
 | Métrica                   | Consulta 1 (DATASET PUBLICO) | Consulta 2 (TABLA) |
@@ -407,21 +407,21 @@ Comparación:
 
 Rendimiento:
 
-![query](imagen16.png)
+![query](assets/imagen16.png)
 
 Resultado:
 
-![query](imagen17.png)
+![query](assets/imagen17.png)
 
 ### Distribución de viajes por método de pago en el primer trimestre 2022 (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen18.png)
+![query](assets/imagen18.png)
 
 Resultado:
 
-![query](imagen19.png)
+![query](assets/imagen19.png)
 
 Comparación:
 | Métrica                   | Consulta 1 (DATASET PUBLICO) | Consulta 2 (TABLA) |
@@ -439,21 +439,21 @@ Comparación:
 
 Rendimiento:
 
-![query](imagen20.png)
+![query](assets/imagen20.png)
 
 Resultado:
 
-![query](imagen21.png)
+![query](assets/imagen21.png)
 
 ### Distribución de viajes por cantidad de pasajeros (viajes con menos de 7 pasajeros) (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen22.png)
+![query](assets/imagen22.png)
 
 Resultado:
 
-![query](imagen23.png)
+![query](assets/imagen23.png)
 
 Comparación:
 | Métrica                   | Consulta 1 (DATASET PUBLICO) | Consulta 2 (TABLA) |
@@ -472,21 +472,21 @@ Comparación:
 
 Rendimiento:
 
-![query](imagen24.png)
+![query](assets/imagen24.png)
 
 Resultado:
 
-![query](imagen25.png)
+![query](assets/imagen25.png)
 
 ### Viajes por mes (solo viajes con propina mayor a 0) (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen26.png)
+![query](assets/imagen26.png)
 
 Resultado:
 
-![query](imagen27.png)
+![query](assets/imagen27.png)
 
 Comparación:
 | Métrica                   | Consulta 1 (DATASET PUBLICO) | Consulta 2 (TABLA) |
@@ -503,21 +503,21 @@ Comparación:
 
 Rendimiento:
 
-![query](imagen28.png)
+![query](assets/imagen28.png)
 
 Resultado:
 
-![query](imagen29.png)
+![query](assets/imagen29.png)
 
 ### Viajes por día de la semana (enero 2022, pasajeros > 1) (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen30.png)
+![query](assets/imagen30.png)
 
 Resultado:
 
-![query](imagen31.png)
+![query](assets/imagen31.png)
 
 Comparación:
 
@@ -536,22 +536,22 @@ Comparación:
 
 Rendimiento:
 
-![query](imagen32.png)
+![query](assets/imagen32.png)
 
 Resultado:
 
-![query](imagen33.png)
+![query](assets/imagen33.png)
 
 
 ### Viajes por hora del día (solo sábados) (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen34.png)
+![query](assets/imagen34.png)
 
 Resultado:
 
-![query](imagen35.png)
+![query](assets/imagen35.png)
 
 Comparación:
 | Métrica                   | Consulta 1 (DATASET PUBLICO) | Consulta 2 (TABLA) |
@@ -563,6 +563,34 @@ Comparación:
 | Registros leídos          | 3,625,659                     | 10,000             |
 | Registros escritos        | 6,200                          | 144                |
 
+
+## Visualizaciones en Looker Studio
+Como parte de la Fase 1 del proyecto, se generaron tres visualizaciones en Looker Studio conectadas directamente a la tabla optimizada taxi_trips_partition_cluster en BigQuery. Estas gráficas permiten evidenciar los hallazgos principales del análisis exploratorio, cumpliendo con el requisito de mostrar entre 2 y 3 reportes basados en los datos.
+
+1. Viajes por mes en 2022
+- Tipo de gráfico: Serie temporal (línea).
+- Dimensión: Mes de pickup_datetime.
+- Métrica: Conteo de registros (número de viajes).
+- Hallazgo: Se observa variación en la demanda de taxis a lo largo del año, con meses de mayor volumen y otros con caídas. Esto refleja - - patrones estacionales que pueden relacionarse con factores externos (clima, turismo, festividades).
+
+![alt text](assets/image.png)
+
+2. Distribución de métodos de pago
+- Tipo de gráfico: Circular (dona).
+- Dimensión: payment_type.
+- Métrica: Conteo de registros (número de viajes).
+- Hallazgo: El 71% de los viajes se pagó con tarjeta, mientras que el 23% se realizó en efectivo y el resto con otros métodos. Esto muestra una clara preferencia por medios electrónicos en el servicio de taxi durante 2022.
+
+![alt text](assets/image-1.png)
+
+3. Tarifa promedio por mes en 2022
+
+- Tipo de gráfico: Barras verticales.
+- Dimensión: Mes de pickup_datetime.
+- Métrica: Promedio de total_amount.
+- Hallazgo: La tarifa promedio mensual se mantiene en un rango entre $15 y $25 USD. Se identifican picos en agosto y diciembre, lo cual puede asociarse a temporadas de alta demanda, como vacaciones de verano y fin de año.
+
+![alt text](assets/image-2.png)
 
 
 ## Conclusiones
@@ -584,5 +612,3 @@ En ambos casos, los bytes volcados al disco permanecen en cero, lo que muestra q
 ### Conclusión general
 
 En conjunto, las métricas demuestran que las tablas particionadas y clusterizadas optimizan significativamente el rendimiento de las consultas en BigQuery. Reducen el tiempo de ejecución, el consumo de recursos y la cantidad de datos procesados, lo que permite un análisis más rápido y eficiente, especialmente en datasets de gran tamaño. Por lo tanto, la partición y clusterización son estrategias recomendadas para mejorar la eficiencia de consultas en entornos de grandes volúmenes de datos.
-
-

@@ -477,8 +477,26 @@ Resultado:
 
 
 
+## Visualizaciones en Looker Studio
+Como parte de la Fase 1 del proyecto, se generaron tres visualizaciones en Looker Studio conectadas directamente a la tabla optimizada taxi_trips_partition_cluster en BigQuery. Estas gráficas permiten evidenciar los hallazgos principales del análisis exploratorio, cumpliendo con el requisito de mostrar entre 2 y 3 reportes basados en los datos.
+
+1. Viajes por mes en 2022
+- Tipo de gráfico: Serie temporal (línea).
+- Dimensión: Mes de pickup_datetime.
+- Métrica: Conteo de registros (número de viajes).
+- Hallazgo: Se observa variación en la demanda de taxis a lo largo del año, con meses de mayor volumen y otros con caídas. Esto refleja - - patrones estacionales que pueden relacionarse con factores externos (clima, turismo, festividades).
 
 
 
+2. Distribución de métodos de pago
+- Tipo de gráfico: Circular (dona).
+- Dimensión: payment_type.
+- Métrica: Conteo de registros (número de viajes).
+- Hallazgo: El 71% de los viajes se pagó con tarjeta, mientras que el 23% se realizó en efectivo y el resto con otros métodos. Esto muestra una clara preferencia por medios electrónicos en el servicio de taxi durante 2022.
 
+3. Tarifa promedio por mes en 2022
 
+- Tipo de gráfico: Barras verticales.
+- Dimensión: Mes de pickup_datetime.
+- Métrica: Promedio de total_amount.
+- Hallazgo: La tarifa promedio mensual se mantiene en un rango entre $15 y $25 USD. Se identifican picos en agosto y diciembre, lo cual puede asociarse a temporadas de alta demanda, como vacaciones de verano y fin de año.

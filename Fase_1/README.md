@@ -573,29 +573,28 @@ Como parte de la Fase 1 del proyecto, se generaron tres visualizaciones en Looke
 
 1. Viajes por mes en 2022
 - Tipo de gráfico: Serie temporal (línea).
-- Dimensión: Mes de pickup_datetime.
-- Métrica: Conteo de registros (número de viajes).
-- Hallazgo: Se observa variación en la demanda de taxis a lo largo del año, con meses de mayor volumen y otros con caídas. Esto refleja - - patrones estacionales que pueden relacionarse con factores externos (clima, turismo, festividades).
+- Dimensión: Mes (pickup_datetime).
+- Métrica: Conteo de registros (número total de viajes).
+- Hallazgo: Se observa un volumen mayor de viajes en enero, con caídas pronunciadas en meses intermedios y ligeros repuntes en octubre y noviembre. Esto evidencia la existencia de patrones estacionales en la demanda de taxis, posiblemente vinculados a factores externos como vacaciones, clima o turismo.
 
 ![alt text](assets/image.png)
 
 2. Distribución de métodos de pago
-- Tipo de gráfico: Circular (dona).
+- Tipo de gráfico: Circular (pie chart).
 - Dimensión: payment_type.
 - Métrica: Conteo de registros (número de viajes).
-- Hallazgo: El 71% de los viajes se pagó con tarjeta, mientras que el 23% se realizó en efectivo y el resto con otros métodos. Esto muestra una clara preferencia por medios electrónicos en el servicio de taxi durante 2022.
+- Hallazgo: El 71% de los viajes fueron pagados con tarjeta, mientras que el 23% se realizaron en efectivo y el resto con otros métodos minoritarios. Esto muestra una fuerte preferencia por los medios de pago electrónicos, consolidando una tendencia hacia la digitalización del transporte.
 
 ![alt text](assets/image-1.png)
 
 3. Tarifa promedio por mes en 2022
 
 - Tipo de gráfico: Barras verticales.
-- Dimensión: Mes de pickup_datetime.
+- Dimensión: Mes (pickup_datetime).
 - Métrica: Promedio de total_amount.
-- Hallazgo: La tarifa promedio mensual se mantiene en un rango entre $15 y $25 USD. Se identifican picos en agosto y diciembre, lo cual puede asociarse a temporadas de alta demanda, como vacaciones de verano y fin de año.
+- Hallazgo: La tarifa promedio se encuentra entre 15 y 25 USD. Se detectan picos en agosto y diciembre, que coinciden con temporadas de alta demanda como vacaciones de verano y festividades de fin de año.
 
 ![alt text](assets/image-2.png)
-
 
 ## Conclusiones
 

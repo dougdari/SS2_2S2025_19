@@ -42,7 +42,7 @@ ORDER BY t.pickup_datetime
 LIMIT 10000;
 ```
 
-![tabla](imagen1.png)
+![tabla](assets/imagen1.png)
 
 ### Creación de la tabla con partición y clusterización
 
@@ -59,11 +59,11 @@ SELECT * FROM engaged-yen-472401-q2.datasetFase1.taxi_trips_temp;
 
 Ejecución de la query para la creación:
 
-![tabla](imagen2.png)
+![tabla](assets/imagen2.png)
 
 Tabla creada:
 
-![cubo](imagen3.png)
+![cubo](assets/imagen3.png)
 
 
 ### Métricas descriptivas
@@ -308,63 +308,63 @@ ORDER BY hora;
 
 Rendimiento:
 
-![query](imagen4.png)
+![query](assets/imagen4.png)
 
 Resultado:
 
-![query](imagen5.png)
+![query](assets/imagen5.png)
 
 ### Distancia promedio de viajes mayores a 1 km (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen6.png)
+![query](assets/imagen6.png)
 
 Resultado:
 
-![query](imagen7.png)
+![query](assets/imagen7.png)
 
 ### Duración promedio de los viajes en minutos (solo enero 2022) (DATASET PUBLICO)
 
 Rendimiento:
 
-![query](imagen8.png)
+![query](assets/imagen8.png)
 
 Resultado:
 
-![query](imagen9.png)
+![query](assets/imagen9.png)
 
 ### Duración promedio de los viajes en minutos (solo enero 2022) (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 
 Rendimiento:
 
-![query](imagen10.png)
+![query](assets/imagen10.png)
 
 Resultado:
 
-![query](imagen11.png)
+![query](assets/imagen11.png)
 
 
 ### Promedio de tarifa y propina para viajes con más de un pasajero (DATASET PUBLICO)
 
 Rendimiento:
 
-![query](imagen12.png)
+![query](assets/imagen12.png)
 
 Resultado:
 
-![query](imagen13.png)
+![query](assets/imagen13.png)
 
 ### Promedio de tarifa y propina para viajes con más de un pasajero (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen14.png)
+![query](assets/imagen14.png)
 
 Resultado:
 
-![query](imagen15.png)
+![query](assets/imagen15.png)
 
 ## Distribución de variables categoricas
 
@@ -372,42 +372,42 @@ Resultado:
 
 Rendimiento:
 
-![query](imagen16.png)
+![query](assets/imagen16.png)
 
 Resultado:
 
-![query](imagen17.png)
+![query](assets/imagen17.png)
 
 ### Distribución de viajes por método de pago en el primer trimestre 2022 (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen18.png)
+![query](assets/imagen18.png)
 
 Resultado:
 
-![query](imagen19.png)
+![query](assets/imagen19.png)
 
 
 ### Distribución de viajes por cantidad de pasajeros (viajes con menos de 7 pasajeros) (DATASET PUBLICO)
 
 Rendimiento:
 
-![query](imagen20.png)
+![query](assets/imagen20.png)
 
 Resultado:
 
-![query](imagen21.png)
+![query](assets/imagen21.png)
 
 ### Distribución de viajes por cantidad de pasajeros (viajes con menos de 7 pasajeros) (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen22.png)
+![query](assets/imagen22.png)
 
 Resultado:
 
-![query](imagen23.png)
+![query](assets/imagen23.png)
 
 
 ## Patrones temporales
@@ -416,63 +416,63 @@ Resultado:
 
 Rendimiento:
 
-![query](imagen24.png)
+![query](assets/imagen24.png)
 
 Resultado:
 
-![query](imagen25.png)
+![query](assets/imagen25.png)
 
 ### Viajes por mes (solo viajes con propina mayor a 0) (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen26.png)
+![query](assets/imagen26.png)
 
 Resultado:
 
-![query](imagen27.png)
+![query](assets/imagen27.png)
 
 ### Viajes por día de la semana (enero 2022, pasajeros > 1) (DATASET PUBLICO)
 
 Rendimiento:
 
-![query](imagen28.png)
+![query](assets/imagen28.png)
 
 Resultado:
 
-![query](imagen29.png)
+![query](assets/imagen29.png)
 
 ### Viajes por día de la semana (enero 2022, pasajeros > 1) (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen30.png)
+![query](assets/imagen30.png)
 
 Resultado:
 
-![query](imagen31.png)
+![query](assets/imagen31.png)
 
 
 ### Viajes por hora del día (solo sábados) (DATASET PUBLICO)
 
 Rendimiento:
 
-![query](imagen32.png)
+![query](assets/imagen32.png)
 
 Resultado:
 
-![query](imagen33.png)
+![query](assets/imagen33.png)
 
 
 ### Viajes por hora del día (solo sábados) (TABLA PARTICIONADA Y CLUSTERIZADA)
 
 Rendimiento:
 
-![query](imagen34.png)
+![query](assets/imagen34.png)
 
 Resultado:
 
-![query](imagen35.png)
+![query](assets/imagen35.png)
 
 
 

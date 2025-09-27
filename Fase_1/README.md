@@ -564,6 +564,10 @@ Comparación:
 | Registros escritos        | 6,200                          | 144                |
 
 
+## Link del dashboard
+
+  * https://lookerstudio.google.com/u/0/reporting/c1c5c301-6db1-4996-9389-d6a67d095528
+
 ## Visualizaciones en Looker Studio
 Como parte de la Fase 1 del proyecto, se generaron tres visualizaciones en Looker Studio conectadas directamente a la tabla optimizada taxi_trips_partition_cluster en BigQuery. Estas gráficas permiten evidenciar los hallazgos principales del análisis exploratorio, cumpliendo con el requisito de mostrar entre 2 y 3 reportes basados en los datos.
 

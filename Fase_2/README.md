@@ -622,7 +622,7 @@ FROM `engaged-yen-472401-q2.datasetFase2.predicciones_propina_test`;
 
 Consulta de prueba
 
-````sql
+```sql
 
 SELECT * 
 FROM `engaged-yen-472401-q2.datasetFase2.dashboard_predicciones`
